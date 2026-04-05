@@ -160,12 +160,15 @@ function renderHomeTechNews() {
   const container = document.getElementById("home-tech-news");
   if (!container) return;
 
+  const thumbSrc = (src) =>
+    typeof src === "string" ? src.replace(/^\.\.\/(?=assets\/)/, "") : src || "";
+
   container.innerHTML = techNews
     .map(
       (item) => `
     <div class="news-card">
       <a href="pages/newsDetail.html?id=${item.id}" class="news-thumb">
-        <img style="height: 200px" src="${item.image}" alt="${item.title}">
+        <img style="height: 200px" src="${thumbSrc(item.image)}" alt="${item.title}">
         <span class="news-tag">
           ${formatCategory(item.category)}
         </span>
