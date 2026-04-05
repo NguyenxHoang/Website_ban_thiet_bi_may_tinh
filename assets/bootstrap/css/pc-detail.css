@@ -1,0 +1,399 @@
+:root {
+  --primary-red: #e11b1e;
+  --hover-red: #c1171a;
+  --gray-bg: #f8f9fa;
+  --text-dark: #222;
+  --border-color: #eee;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: var(--text-dark);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.main-img-container {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: zoom-in;
+}
+
+.main-img-container img {
+  max-width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+.thumb-group {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.thumb-item {
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  object-fit: contain;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.thumb-item.active {
+  border-color: var(--primary-red);
+  border-width: 2px;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.price-current {
+  color: var(--primary-red);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}
+
+.discount-label {
+  background: var(--primary-red);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.btn-sold-out {
+  background: red;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.btn-contact {
+  background: #fff;
+  color: var(--primary-red);
+  border: 1px solid var(--primary-red);
+  font-weight: 700;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.highlight-box {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.highlight-header {
+  background: var(--primary-red);
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.table-highlight {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.table-highlight td {
+  padding: 10px 15px;
+  border-color: var(--border-color);
+}
+
+.table-highlight td:first-child {
+  font-weight: 600;
+  width: 35%;
+  color: #555;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 30px 0 20px;
+  text-transform: uppercase;
+  border-left: 4px solid var(--primary-red);
+  padding-left: 15px;
+}
+
+.product-item-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+  transition: 0.3s;
+  position: relative;
+  background: #fff;
+}
+
+.product-item-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.badge-hot {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--primary-red);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+}
+
+.related-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.related-price {
+  color: var(--primary-red);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.spec-container h4 {
+  background: #eee;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.review-box {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .product-top-row > div:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.spec-content-wrapper {
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.spec-content-wrapper.expanded {
+  max-height: 3000px;
+}
+
+.spec-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, #fff);
+  pointer-events: none;
+}
+
+.expanded .spec-gradient {
+  display: none;
+}
+
+#fullscreenModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+#fullscreenImg {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.zoom-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.zoom-nav:hover {
+  color: var(--primary-red);
+}
+.zoom-prev {
+  left: 10px;
+}
+.zoom-next {
+  right: 10px;
+}
+
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.feature-img-review {
+  width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  margin-bottom: 14px;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.news-item:hover {
+  color: #b30000;
+}
+
+.thumb {
+  width: 80px;
+  height: 55px;
+  border: 2px solid red;
+  border-radius: 6px;
+  padding: 2px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.side-banner {
+  position: fixed;
+  top: 100px;
+  width: 120px;
+  z-index: 999;
+}
+
+.side-banner img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.left-banner {
+  left: 10px;
+}
+
+.right-banner {
+  right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .side-banner {
+    display: none;
+  }
+}
+
+.spec-content-wrapper img,
+.feature-img-review {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.main-img-container {
+  width: 100%;
+  height: 420px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.main-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: zoom-in;
+}

@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/logo (1).png" type="image/x-icon">
+    <!-- Nhúng boostrap -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/style.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/responsive.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/new.css">
+    <title>PC WORLD</title>
+    <style>
+      h2 {
+        color: red;
+        padding: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0 container-web">
+      <!-- HEADER -->
+        <div class="wrapper">
+          <header>
+            <a href="../index.html"
+              ><img src="../assets/img/logo (1).png" class="logo" alt="Logo"
+            /></a>
+            <div class="danhMuc">
+              <img
+                src="../assets/img/menu (1).png"
+                style="height: 30px"
+                alt="Hamberger"
+              />
+              <span>Danh mục</span>
+            </div>
+            <!-- search -->
+            <div class="search">
+              <input type="text" id="searchInput" placeholder="Bạn cần tìm gì ?" />
+              <div id="searchResults" class="search-results"></div>
+              <a href="productPage.html">
+                <img
+                  src="../assets/img/search.png"
+                  alt="search"
+                  style="width: 25px"
+                />
+              </a>
+            </div>
+            <!-- thông tin -->
+            <ul class="header-info">
+              <li>
+                <a href="../index.html">
+                  <img
+                    src="../assets/img/headphone-mic.png"
+                    alt="headphone-mic" 
+                  />
+                  <span>Hotline 1900.5301</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html">
+                  <img src="../assets/img/location-alt.png" alt="location-alt" />
+                  <span>Hệ thống Showroom</span>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html">
+                  <img
+                    src="../assets/img/clipboard.png"
+                    style="font-size: 10px"
+                    alt="clipboard"
+                  />
+                  <span>Tra cứu đơn hàng</span>
+                </a>
+              </li>
+              <li>
+                <a href="cart.html" class="cart">
+                  <img src="../assets/img/cart.png" alt="cart" />
+                  <span>Giỏ hàng</span>
+                  <span class="number" id="cartCount">0</span>
+                </a>
+              </li>
+              <li class="user">
+                <a href="#">
+                  <img src="../assets/img/user.png" alt="user" />
+                  <span>Đăng nhập</span>
+                </a>
+              </li>
+            </ul>
+            <!-- hamburger mobile -->
+          <div class="hamburger d-lg-none">
+             <img src="../assets/img/menu (1).png" alt="menu" style="width: 30px;"/>
+          </div>
+          </header>
+  
+  
+        </div>
+      <!-- Show sản phẩm -->
+      <div class="show">
+        <div class="mega-menu">
+          <ul>
+            <li>
+              <div class="content">
+                <img src="../assets/img/laptop (1).png" alt="laptop" />
+                <span>Laptop </span>
+              </div>
+              <img src="../assets/img/caret-big-right.png" alt="" />
+            </li>
+            <div class="sub1">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Laptop</h4>
+                  <div>ASUS OLED Series</div>
+                  <div>Vivobook Series</div>
+                  <div>Zenbook Series</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Laptop ACER</h4>
+                  <div>Aspire Series</div>
+                  <div>Swift Series</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Laptop MSI</h4>
+                  <div>Modern Series</div>
+                  <div>Prestige Series</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Laptop Lenovo</h4>
+                  <div>Thinkbook Series</div>
+                  <div>Ideapad Series</div>
+                  <div>Thinkpad Series</div>
+                  <div>Yoga Series</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Thương hiệu</h4>
+                  <div>ASUS</div>
+                  <div>ACER</div>
+                  <div>MSI</div>
+                  <div>DELL</div>
+                  <div>HP - Pavilion</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Giá bán</h4>
+                  <div>Dưới 15 triệu</div>
+                  <div>Từ 15 đến 20 triệu</div>
+                  <div>Trên 20 triệu</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>CPU Intel - AMD</h4>
+                  <div>Intel Core i3</div>
+                  <div>Intel Core i5</div>
+                  <div>Intel Core i7</div>
+                  <div>AMD Ryzen</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Nhu cầu sử dụng</h4>
+                  <div>Đồ họa - Studio</div>
+                  <div>Học sinh - Sinh viên</div>
+                  <div>Thinkpad Series</div>
+                  <div>Mỏng nhẹ cao cấp</div>
+                </div>
+              </div>
+            </div>
+            <li>
+              <div class="content">
+                <img src="../assets/img/laptop.png" alt="pc" />
+                <span>PC</span>
+              </div>
+              <img src="../assets/img/caret-big-right.png" alt="" />
+            </li>
+            <div class="sub2">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>PC THEO GIÁ</h4>
+                  <div>PC DƯỚI 30 TRIỆU</div>
+                  <div>PC TỪ 30 - 50 TRIỆUs</div>
+                  <div>PC TỪ 50 - 70 TRIỆU</div>
+                  <div>PC TỪ 70 - 100 TRIỆU</div>
+                  <div>PC TỪ 100 - 200 TRIỆU</div>
+                  <div>PC TRÊN 200 TRIỆU</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>PC RTX 50 Series</h4>
+                  <div>PC RTX 5090</div>
+                  <div>PC RTX 5080</div>
+                  <div>PC RTX 5070Ti</div>
+                  <div>PC RTX 5070</div>
+                  <div>PC RTX 5060Ti</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>PC theo cấu hình VGA</h4>
+                  <div>PC RTX 5060 (HOT)</div>
+                  <div>PC RTX 5050</div>
+                  <div>PC RTX 3060 (HOT)</div>
+                  <div>PC RTX 3050</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>PC theo cấu hình VGA</h4>
+                  <div>PC RTX 5060Ti</div>
+                  <div>PC RTX 5070</div>
+                  <div>PC RTX 5070Ti</div>
+                  <div>PC RTX 5080</div>
+                  <div>PC RTX 5090</div>
+                </div>
+              </div>
+              <!-- Hàng 2 -->
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>PC theo CPU AMD</h4>
+                  <div>PC AMD R3</div>
+                  <div>PC AMD R5 (HOT)</div>
+                  <div>MPC AMD R7SI</div>
+                  <div>PC AMD R9</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>CPU - Bộ vi xử lý Intel</h4>
+                  <div>CPU Intel Core Ultra Series 2 (Mới)</div>
+                  <div>CPU Intel 9</div>
+                  <div>CPU Intel 7</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>PC theo CPU Intel</h4>
+                  <div>PC Ultra 5</div>
+                  <div>PC Ultra 7</div>
+                  <div>PC Ultra 9</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>PC Văn phòng</h4>
+                  <div>Homework Athlon - Giá chỉ 3.990k</div>
+                  <div>Homework R3 - Giá chỉ 5,690k</div>
+                </div>
+              </div>
+            </div>
+            <li>
+              <div class="content">
+                <img src="../assets/img/widget.png" alt="linh kiện" />
+                <span>Linh kiện máy tính</span>
+              </div>
+              <img src="../assets/img/caret-big-right.png" alt="" />
+            </li>
+            <div class="sub3">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Laptop</h4>
+                  <div>ASUS OLED Series</div>
+                  <div>Vivobook Series</div>
+                  <div>Zenbook Series</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Laptop ACER</h4>
+                  <div>Aspire Series</div>
+                  <div>Swift Series</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Laptop MSI</h4>
+                  <div>Modern Series</div>
+                  <div>Prestige Series</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Laptop Lenovo</h4>
+                  <div>Thinkbook Series</div>
+                  <div>Ideapad Series</div>
+                  <div>Thinkpad Series</div>
+                  <div>Yoga Series</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Thương hiệu</h4>
+                  <div>ASUS</div>
+                  <div>ACER</div>
+                  <div>MSI</div>
+                  <div>DELL</div>
+                  <div>HP - Pavilion</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Giá bán</h4>
+                  <div>Dưới 15 triệu</div>
+                  <div>Từ 15 đến 20 triệu</div>
+                  <div>Trên 20 triệu</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>CPU Intel - AMD</h4>
+                  <div>Intel Core i3</div>
+                  <div>Intel Core i5</div>
+                  <div>Intel Core i7</div>
+                  <div>AMD Ryzen</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Nhu cầu sử dụng</h4>
+                  <div>Đồ họa - Studio</div>
+                  <div>Học sinh - Sinh viên</div>
+                  <div>Thinkpad Series</div>
+                  <div>Mỏng nhẹ cao cấp</div>
+                </div>
+              </div>
+            </div>
+            <li>
+              <div class="content">
+                <img src="../assets/img/monitor.png" alt="Màn hình" />
+                <span>Màn hình</span>
+              </div>
+              <img src="../assets/img/caret-big-right.png" alt="" />
+            </li>
+            <div class="sub4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Hãng sản xuất</h4>
+                  <div>MSI</div>
+                  <div>Samsung</div>
+                  <div>Philips</div>
+                  <div>E-Dra</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Giá tiền</h4>
+                  <div>Dưới 5 triệu</div>
+                  <div>Từ 5 triệu đến 10 triệu</div>
+                  <div>Từ 10 triệu đến 20 triệu</div>
+                  <div>Từ 20 triệu đến 30 triệu</div>
+                  <div>Trên 30 triệu</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Độ Phân giải</h4>
+                  <div>Màn hình Full HD</div>
+                  <div>Màn hình 2K 1440p</div>
+                  <div>Màn hình 4K UHD</div>
+                  <div>Màn hình 6K</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Tần số quét</h4>
+                  <div>60Hz</div>
+                  <div>75Hzs</div>
+                  <div>100Hz</div>
+                  <div>144Hz</div>
+                  <div>240Hz</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Màn hình cong</h4>
+                  <div>24" Curved</div>
+                  <div>27" Curved</div>
+                  <div>32" Curved</div>
+                  <div>Trên 32" Curved</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Màn hình đồ họa</h4>
+                  <div>Màn hình đồ họa 24"</div>
+                  <div>Màn hình đồ họa 27"</div>
+                  <div>Màn hình đồ họa 32"</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Phụ kiện màn hình</h4>
+                  <div>Giá treo màn hình</div>
+                  <div>Phụ kiện dây HDMI,DP,LAN</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Màn hình di động</h4>
+                  <div>Full HD 1080p</div>
+                  <div>2K 1440p</div>
+                  <div>Có cảm ứng</div>
+                </div>
+              </div>
+            </div>
+            <li>
+              <div class="content">
+                <img src="../assets/img/keyboard.png" alt="bàn phím" />
+                <span>Bàn phím và chuột</span>
+              </div>
+              <img src="../assets/img/caret-big-right.png" alt="" />
+            </li>
+            <div class="sub5">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Thương hiệu bàn phím</h4>
+                  <div>ASUSes</div>
+                  <div>Logitech</div>
+                  <div>Razers</div>
+                  <div>Leopold</div>
+                  <div>Rapoo</div>
+                  <div>VGN</div>
+                  <div>MadLions</div>
+                  <div>SKYLOONG</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Thương hiệu chuột</h4>
+                  <div>Logitech</div>
+                  <div>Razer</div>
+                  <div>Corsair</div>
+                  <div>Microsoft</div>
+                  <div>Dare U</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Giá tiền</h4>
+                  <div>Dưới 1 triệu</div>
+                  <div>1 triệu - 2 triệu</div>
+                  <div>2 triệu - 3 triệu</div>
+                  <div>3 triệu - 4 triệu</div>
+                  <div>Trên 4 triệu</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Kết nối</h4>
+                  <div>Bluetooth</div>
+                  <div>Wireless</div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <li>
+              <div class="content">
+                <img src="../assets/img/headphone-alt-2.png" alt="tai nghe" />
+                <span>Tai nghe</span>
+              </div>
+              <img src="../assets/img/caret-big-right.png" alt="" />
+            </li>
+            <div class="sub6">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Thương hiệu tai nghe</h4>
+                  <div>ASUS</div>
+                  <div>HyperX</div>
+                  <div>Corsair</div>
+                  <div>Razer</div>
+                  <div>ONIKUMA</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Thương hiệu tai nghe</h4>
+                  <div>Steelseries</div>
+                  <div>Rapoo</div>
+                  <div>Logitech</div>
+                  <div>Edifier</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Tai nghe theo giá</h4>
+                  <div>Tai nghe dưới 1 triệu</div>
+                  <div>Tai nghe 1 triệu đến 2 triệu</div>
+                  <div>Tai nghe 2 đến 3 triệu</div>
+                  <div>Tai nghe 3 đến 4 triệu</div>
+                  <div>Tai nghe trên 4 triệu</div>
+                </div>
+                <div class="col-lg-3">
+                  <h4>Kiểu kết nối</h4>
+                  <div>Tai nghe Wireless</div>
+                  <div>Tai nghe Bluetooth</div>
+                </div>
+              </div>
+              <!--  Hàng 2-->
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4>Kiểu tai nghe</h4>
+                  <div>Tai nghe Over-ear</div>
+                  <div>Tai nghe Gaming In-ear</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+    <!-- Đăng nhập -->
+       <div class="login">
+        <div class="header__login">
+          <div>Đăng nhập tài khoản</div>
+          <div onclick="closeLogin()">x</div>
+        </div>
+        <form action="">
+          <label for="user">Tài khoản</label>
+          <input name="user" type="text" placeholder="Nhập tên tài khoản hoặc email">
+           <label for="password">Mật khẩu</label>
+          <input name="password" type="password" placeholder="Nhập mật khẩu">
+                  <div class="quenMatKhau">
+          <div>
+            <input type="checkbox">
+            <span>Ghi nhớ mật khẩu</span>
+          </div>
+          <a href="#">Quên mật khẩu</a>
+          </div>
+          <button onclick="return alert('Bạn đã đăng nhập thành công')" type="submit" class="btn btn-danger" style="margin-top: 20px;">Đăng nhập</button>
+          <span onclick="openRegister()" style="text-align: center;">Bạn chưa có tài khoản? <a href="#register" style="text-decoration: none;">Đăng ký tài khoản</a></span>
+        </form>
+    
+       </div>
+       <!-- Đăng ký -->
+      <div class="register">
+        <div class="header__register">
+          <div>Đăng ký tài khoản PC WORLD</div>
+          <div onclick="closeLogin()">x</div>
+        </div>
+        <form action="" id="registerForm" onsubmit="return validateRegister()">
+          <label for="user">Họ và tên</label>
+          <input id="fullname" name="user" type="text" placeholder="Nhập họ và tên">
+          <label for="password">Email</label>
+          <input id="email" name="password" type="email" placeholder="Nhập email">
+          <label for="user">Số điện thoại</label>
+          <input id="phone" name="user" type="tel" placeholder="Nhập số điện thoại">
+          <label for="user">Mật khẩu</label>
+          <input id="password" name="user" type="text" placeholder="Nhập mật khẩu">
+          <label for="user">Xác nhận mật khẩu</label>
+          <input id="confirmPassword" name="user" type="text" placeholder="Nhập lại mật khẩu">
+          <button type="submit" class="btn btn-danger" style="margin-top: 20px;">Đăng ký</button>
+          <span onclick="backToLogin()" style="text-align: center;">Bạn đã có tài khoản?<a style="text-decoration: none;" href="#">Đăng nhập</a></span>
+        </form>
+    
+      </div>   
+        <nav aria-label="breadcrumb" class="breadcrumb-container">
+            <ol class="breadcrumb-modern">
+                <li class="breadcrumb-item-modern">
+             <a href="../index.html">
+                <span>Trang chủ</span>
+            </a>
+        </li>
+        <li class="breadcrumb-separator">›</li>
+        <li class="breadcrumb-item-modern active">
+            <span>Trang tin tức</span>
+        </li>
+        </ol>
+        </nav>
+      <!-- Phần nội dung của từng trang -->
+        <aside class="sidebar top-sidebar">
+          <div class="sidebar-item">
+            <h4>BẢNG TIN NỔI BẬT</h4>
+            <div class="top-sidebar-content">
+            <div class="news-item"><span>Giảm giá 50% PC Gaming</span></div>
+            <div class="news-item"><span>Laptop mới 2026</span></div>
+            <div class="news-item"><span>Quà tặng khi mua hôm nay</span></div>
+            <div class="news-item"><span>Miễn phí vệ sinh máy trọn đời</span></div>
+            <div class="news-item"><span>Hỗ trợ trả góp 0%</span></div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main-layout">
+      <!-- left sidebar -->
+        <aside class="sidebar left-sidebar">
+    <div class="sidebar-item">
+      <h4>DANH MỤC PHỔ BIẾN</h4>
+      <img src="../assets/img/danhmucphobien.jpg" alt="Ad" />
+      <ul class="category-list">
+        <li>Gaming PC</li>
+        <li>Office PC</li>
+        <li>Mac Studio</li>
+        <li>Laptop Chơi Game</li>
+        <li>Laptop Văn Phòng</li>
+      </ul>
+    </div>
+        </aside>
+      <!-- nội dung chính -->
+    <div class="main-content">
+    <!-- các bài báo nổi bật -->
+      <div id="featured-news"></div>
+
+    <!-- báo / tin -->
+    <div id="latest-news" class="articles-grid"></div>
+
+    <!-- TIN CÔNG NGHỆ -->
+    <section class="tech-news">
+      <h2>Tin công nghệ</h2>
+      <div id="tech-news-container" class="news-grid"></div>
+    </section>
+
+    <!-- THỦ THUẬT -->
+    <section class="tips-news">
+      <h2>Thủ thuật hay</h2>
+      <div id="tips-news-container" class="news-grid"></div>
+    </section>
+      </div>
+      <!-- RIGHT SIDEBAR -->
+              <aside class="sidebar right-sidebar">
+          <aside class="sidebar right-sidebar">
+            <h3
+              class="sidebar-title border-bottom pb-2 fw-bold"
+              style="color: #c00000"
+            >
+              CHỦ ĐỀ HOT
+            </h3>
+            <div class="hot-topics mt-3">
+              <div
+                class="hot-item d-flex align-items-center mb-3 p-2 bg-light rounded border"
+              >
+                <img
+                  src="../assets/img/codegame.jpg"
+                  alt="Code game"
+                  style="
+                    width: 80px;
+                    height: 55px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                  "
+                />
+                <p
+                  class="mb-0 ms-3 fw-bold text-dark"
+                  style="white-space: nowrap"
+                >
+                  Code game
+                </p>
+              </div>
+
+              <div
+                class="hot-item d-flex align-items-center mb-3 p-2 bg-light rounded border"
+              >
+                <img
+                  src="../assets/img/tải xuống3.jpg"
+                  alt="Minecraft"
+                  style="
+                    width: 80px;
+                    height: 55px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                  "
+                />
+                <p
+                  class="mb-0 ms-3 fw-bold text-dark"
+                  style="white-space: nowrap"
+                >
+                  Minecraft
+                </p>
+              </div>
+
+              <div
+                class="hot-item d-flex align-items-center mb-3 p-2 bg-light rounded border"
+              >
+                <img
+                  src="../assets/img/tải xuống4.jpg"
+                  alt="Free Fire"
+                  style="
+                    width: 80px;
+                    height: 55px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                  "
+                />
+                <p
+                  class="mb-0 ms-3 fw-bold text-dark"
+                  style="white-space: nowrap"
+                >
+                  Free Fire
+                </p>
+              </div>
+
+              <div
+                class="hot-item d-flex align-items-center mb-3 p-2 bg-light rounded border"
+              >
+                <img
+                  src="../assets/img/tải xuống5.jpg"
+                  alt="Roblox"
+                  style="
+                    width: 80px;
+                    height: 55px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                  "
+                />
+                <p
+                  class="mb-0 ms-3 fw-bold text-dark"
+                  style="white-space: nowrap"
+                >
+                  Roblox
+                </p>
+              </div>
+            </div>
+            <div class="sidebar-item popular-posts" style="color: black;">
+              <h4>BÀI VIẾT XEM NHIỀU</h4>
+              <ul>
+                <li>Top PC Gaming 2026</li>
+                <li>Nâng cấp RAM có tăng FPS không?</li>
+                <li>RTX 5090 mạnh cỡ nào?</li>
+                <li>So sánh SSD Gen 4 và Gen 5</li>
+              </ul>
+            </div>
+          </aside>
+        </aside>
+    </main>
+
+
+      <!-- FOOTER -->
+      <footer class="bg-white border-top mt-5">
+        <div class="container py-5">
+          <!-- footer cho desktop -->
+          <div class="row d-none d-lg-flex">
+            <div class="col-lg-2">
+              <h6 class="fw-bold">VỀ PC WORLD</h6>
+              <ul class="list-unstyled">
+                <li>Giới thiệu</li>
+                <li>Tuyển dụng</li>
+                <li>Liên hệ</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2">
+              <h6 class="fw-bold">CHÍNH SÁCH</h6>
+              <ul class="list-unstyled">
+                <li>Chính sách bảo hành</li>
+                <li>Chính sách giao hàng</li>
+                <li>Chính sách bảo mật</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <h6 class="fw-bold">THÔNG TIN</h6>
+              <ul class="list-unstyled">
+                <li>Hệ thống cửa hàng</li>
+                <li>Hướng dẫn mua hàng</li>
+                <li>Hướng dẫn thanh toán</li>
+                <li>Hướng dẫn trả góp</li>
+                <li>Tra cứu địa chỉ bảo hành</li>
+                <li>Build PC</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <h6 class="fw-bold">TỔNG ĐÀI HỖ TRỢ (8:00 - 21:00)</h6>
+              <p>Mua hàng: <strong class="text-primary">1900.5301</strong></p>
+              <p>Bảo hành: <strong class="text-primary">1900.5325</strong></p>
+              <p>Khiếu nại: <strong class="text-primary">1800.6173</strong></p>
+              <p>
+                Email: <strong class="text-primary">cskh@pcworld.com</strong>
+              </p>
+            </div>
+
+            <div class="col-lg-2">
+              <h6 style="width: 250px" class="fw-bold">ĐƠN VỊ VẬN CHUYỂN</h6>
+              <img
+                src="../assets/img/donViGiaoHang.jpg"
+                style="width: 100%"
+                alt="đơn vị giao hàng"
+              />
+              <h6 style="width: 250px" class="fw-bold mt-3">
+                CÁCH THỨC THANH TOÁN
+              </h6>
+              <img
+                src="../assets/img/cachThucGiaoHang.png"
+                style="width: 100%"
+                alt="đơn vị giao hàng"
+              />
+            </div>
+          </div>
+
+          <!-- ===== Response cho mobile ===== -->
+          <div class="accordion d-block d-lg-none" id="footerAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#about"
+                >
+                  VỀ PC WORLD
+                </button>
+              </h2>
+              <div id="about" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>Giới thiệu</p>
+                  <p>Tuyển dụng</p>
+                  <p>Liên hệ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#policy"
+                >
+                  CHÍNH SÁCH
+                </button>
+              </h2>
+              <div id="policy" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>Chính sách bảo hành</p>
+                  <p>Chính sách giao hàng</p>
+                  <p>Chính sách bảo mật</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#info"
+                >
+                  THÔNG TIN
+                </button>
+              </h2>
+              <div id="info" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>Hệ thống cửa hàng</p>
+                  <p>Hướng dẫn mua hàng</p>
+                  <p>Hướng dẫn thanh toán</p>
+                  <p>Hướng dẫn trả góp</p>
+                  <p>Build PC</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#support"
+                >
+                  TỔNG ĐÀI HỖ TRỢ (8:00 - 21:00)
+                </button>
+              </h2>
+              <div id="support" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>Mua hàng: 1900.5301</p>
+                  <p>Bảo hành: 1900.5325</p>
+                  <p>Khiếu nại: 1800.6173</p>
+                  <p>Email: cskh@pcworld.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                >
+                  ĐƠN VỊ VẬN CHUYỂN
+                </button>
+              </h2>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                >
+                  CÁCH THỨC THANH TOÁN
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Nhúng script -->
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/js/header.js"></script>
+    <script src="../assets/bootstrap/js/products.js"></script>
+    <script src="../assets/bootstrap/js/cart.js"></script>
+    <script src="../assets/bootstrap/js/checkout.js"></script>
+    <script src="../assets/bootstrap/js/news.js"></script>
+    <script src="../assets/bootstrap/js/newPage.js"></script>
+    <script src="../assets/bootstrap/js/home.js"></script>
+  </body>
+</html>
