@@ -3227,25 +3227,25 @@ const productsData = [
           title: "Thiết kế công thái học với nét gaming hoàn hảo",
           content:
             "Màn hình ASUS TUF Gaming VG249QE5A-R mang thiết kế mạnh mẽ, hầm hố đặc trưng của dòng ASUS TUF Gaming, với các đường nét và nút bấm được hoàn thiện nổi bật, phù hợp cho góc setup gaming hoặc làm việc ấn tượng.",
-          image: "../assets/img/monitor/tuf/t-1.jpg",
+          image: "../assets/img/monitor/TUF/t-1.jpg",
         },
         {
           title: "Tần số quét 146Hz độc nhất",
           content:
             "Màn hình ASUS TUF Gaming VG249QE5A-R có tần số quét 146Hz (ép xung), mang lại chuyển động mượt mà hơn so với 60–144Hz, giúp giảm lag và nhòe hình khi chơi game hoặc xem phim.",
-          image: "../assets/img/monitor/tuf/t-2.png",
+          image: "../assets/img/monitor/TUF/t-2.png",
         },
         {
           title: "Hướng đến sự mượt mà trong từng khung hình",
           content:
             "Hỗ trợ thêm vào khả năng hiển thị đó là công nghệ AdaptiveSync, ASUS TUF Gaming VG249QE5A-R mang đến những hình ảnh siêu mượt cho những chi tiết lý tưởng nhất. Những hình ảnh hiển thị được giảm thiểu tình trạng răng cưa và tình trạng xé màn hình khó chịu.",
-          image: "../assets/img/monitor/tuf/t-3.png",
+          image: "../assets/img/monitor/TUF/t-3.png",
         },
         {
           title: "Tương thích tuyệt vời cùng những cấu hình gaming",
           content:
             "Màn hình ASUS TUF Gaming VG249QE5A-R được trang bị công nghệ ASUS Variable Overdrive, giúp tự động điều chỉnh theo tốc độ khung hình của card đồ họa, đảm bảo hình ảnh luôn ổn định và mượt mà khi chơi game",
-          image: "../assets/img/monitor/tuf/t-4.png",
+          image: "../assets/img/monitor/TUF/t-4.png",
         },
       ],
     },
