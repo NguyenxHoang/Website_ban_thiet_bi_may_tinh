@@ -3195,11 +3195,11 @@ const productsData = [
     quantity: 1,
 
     images: [
-      "../assets/img/monitor/tuf/t-1.jpg",
-      "../assets/img/monitor/tuf/t-2.png",
-      "../assets/img/monitor/tuf/t-3.png",
-      "../assets/img/monitor/tuf/t-4.png",
-      "../assets/img/monitor/tuf/t-5.jpg",
+      "../assets/img/monitor/TUF/t-1.jpg",
+      "../assets/img/monitor/TUF/t-2.png",
+      "../assets/img/monitor/TUF/t-3.png",
+      "../assets/img/monitor/TUF/t-4.png",
+      "../assets/img/monitor/TUF/t-5.jpg",
     ],
 
     highlightSpecs: {
